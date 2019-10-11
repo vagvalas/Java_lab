@@ -41,4 +41,8 @@ public boolean is_better_than(Product other) {
 	return false;
 	// return ( score/price > other.score/other.price) THA MPOROUSA
 }
+public void printData()
+{
+	System.out.println("The best product is" + best_name + "\n" + best_price + best_score);
+}
 }

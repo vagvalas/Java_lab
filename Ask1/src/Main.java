@@ -34,7 +34,7 @@ public class Main {
 			keyboard.nextLine();
 			
 		}
-		System.out.println("The best product is" + best_name + "\n" + best_price + best_score);
+		
 		
 		
 
