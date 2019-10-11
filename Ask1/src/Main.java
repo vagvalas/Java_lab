@@ -5,6 +5,8 @@ public class Main {
 		/* antikeimeno
 		 */
 		Scanner keyboard = new Scanner(System.in);
+		Product best = new Product("", 1, 0);
+		
 		
 		/* dilwseis */
 		String best_name = "";
@@ -13,22 +15,15 @@ public class Main {
 		
 		boolean more = true;
 		while (more) {
+			Product current = new Product();
 			
-			String next_name;
-			double next_price;
-			int next_score;
-			System.out.println("Enter product name:");
-			next_name = keyboard.nextLine();
-			System.out.println("Enter product price:");
-			next_price = keyboard.nextDouble();
-			System.out.println("Enter product score:");
-			next_score = keyboard.nextInt();
 			
-			if (next_score/next_price > best_score/best_price) 
+			
+			current.read();
+			
+			if ( current.is_better_than(best)) 
 			{
-				best_name = next_name;
-				best_price = next_price;
-				best_score = next_score;
+				best = current;
 				
 			}
 			System.out.print("More data ? 1 or 2");
