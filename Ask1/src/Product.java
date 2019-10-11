@@ -38,5 +38,7 @@ public boolean is_better_than(Product other) {
 
 	if ( score/price > other.score/other.price)
 		return true;
+	return false;
+	// return ( score/price > other.score/other.price) THA MPOROUSA
 }
 }
